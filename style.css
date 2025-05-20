@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
 body{
     padding:0;
     margin:0;
@@ -15,10 +16,45 @@ header{
     width: 100%;
     height: 50px;
     background-color: #14b1bb;
+    display: flex;
+    flex-direction:row;
 }
 
 #d_branco{
     height: 108px;
     width: 100%;
     background-color:white;
+}
+
+header #d_verde > div{
+    width:50%;
+    height: 100%;
+    background-color:red;
+    border:1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+header #d_verde > div > div{
+    display: flex;
+    flex-direction: row;
+    color:white;
+}
+
+header #d_verde > div > div img{
+    filter: invert();
+    width: 14px;
+    height: 20px;
+}
+
+header #d_verde > div > div p{
+    font-family: "Livvic", sans-serif;
+    font-weight:600;
+}
+
+
+header #d_verde > div > div:nth-child(1){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
